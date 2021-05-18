@@ -39,9 +39,7 @@ class CarRepositoryTest {
 
         carRepository.save(carInstance);
 
-        if(expectedDriveable) {
-            actual = carRepository.findCarsByCanIDriveIt(expectedDriveable);
-        };
+        if (expectedDriveable) actual = carRepository.findCarsByCanIDriveIt(expectedDriveable);
         assertTrue(actual.contains(carInstance));
 
     }
