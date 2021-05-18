@@ -30,8 +30,8 @@ public class CarController {
         service.saveNewCar(car);
     }
 
-    @GetMapping("/cars/runnable")
-    public List<String> getRunnableCars() {
-        return service.getRunnableCars();
+    @GetMapping("/cars/affordable")
+    public List<String> getAffordablears() {
+        return service.getAffordablears();
     }
 }
