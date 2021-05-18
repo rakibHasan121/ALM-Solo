@@ -16,5 +16,5 @@ public class Car {
     String id;
     String name;
     boolean stylish;
-    boolean canIAffordIt;
+    boolean canIDriveIt;
 }

@@ -26,9 +26,9 @@ public class CarService {
         repository.save(car);
     }
 
-    public List<String> getAffordablears() {
+    public List<String> getRunnableCars() {
 
-        List<Car> runnableCars = repository.findCarsByCanIAffordIt(true);
+        List<Car> runnableCars = repository.findCarsByCanIDriveIt(true);
         return runnableCars.stream()
                 .map(car -> car.getName())
                 .collect(Collectors.toList());

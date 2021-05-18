@@ -13,5 +13,5 @@ import java.util.List;
  */
 @Repository
 public interface CarRepository extends MongoRepository<Car, String> {
-    List<Car> findCarsByCanIAffordIt(boolean canDrive);
+    List<Car> findCarsByCanIDriveIt(boolean canDrive);
 }
