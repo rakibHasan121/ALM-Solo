@@ -18,3 +18,10 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: password
     depends_on:
       - mongo
+
+  java-app:
+    build: .
+    ports:
+      - 8085:8080
+    depends_on:
+      - mongo
